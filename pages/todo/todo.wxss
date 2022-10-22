@@ -1,0 +1,57 @@
+page{
+	background: mintcream;
+}
+.search{
+	display: flex;
+	margin:20rpx;
+	padding:20rpx;
+	align-items: center;
+	border: solid 1rpx #00BFA6;
+	border-radius: 10rpx;
+	box-shadow: 0 0 20rpx #e0e0e0;
+	background: white;
+}
+.search image{
+	width: 40rpx;
+	height: 40rpx;
+	margin-right: 20rpx;
+}
+.todos{
+	margin:20rpx;
+	border: solid 1rpx #00BFA6;
+	border-radius: 5rpx;
+	box-shadow: 0 0 20rpx #e0e0e0;
+	background: white;
+}
+.todos .item{
+	display: flex;
+	align-items: center;
+	padding: 20rpx;
+	border-bottom: solid 1rpx #00BFA6;
+	
+}
+.todos .item text{
+   flex: 1;
+   margin-left: 20rpx;
+   font-size: 35rpx;
+   color: #444;
+}
+.todos .item.completed text{
+	color: #888;
+	text-decoration-line: line-through;
+}
+.num{
+	color: #00BFA6;
+}
+.doneit{
+	display: flex;
+	justify-content: space-around;
+	margin: 20rpx;
+	font-size: 30rpx;
+	color:#666;
+}
+.tip{
+	color: #777;
+	margin: 30rpx;
+	
+}

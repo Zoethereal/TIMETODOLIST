@@ -1,0 +1,21 @@
+<!--pages/tz/tz.wxml-->
+<!-- <view class="container"> -->
+<view class="text">The points for the dice are:<text class="dicenum" decode="{{true}}">&nbsp;{{total}}</text></view>
+<view class="point">
+  <image class="img" src="{{top}}"></image>
+</view>
+
+<button class='{{btn}}' bindtap='click'>{{texts}}</button>
+<view class="choices">你可以在框中填写一些难以抉择的选项，比如晚上吃什么？学习多久？亦或者与室友赌大小，决定谁去拿外卖。然后，摇它！
+</view>
+
+<view class="enterbox">
+  <input class="inputit" type="input" placeholder="If it's 1, then i will..." value="{{inputt}}"/>
+  <input class="inputit" type="input" placeholder="If it's 2, then i will..." value="{{inputt}}"/>
+  <input class="inputit" type="input" placeholder="If it's 3, then i will..." value="{{inputt}}"/>
+  <input class="inputit" type="input" placeholder="If it's 4, then i will..." value="{{inputt}}"/>
+  <input class="inputit" type="input" placeholder="If it's 5, then i will..." value="{{inputt}}"/>
+  <input class="inputit" type="input" placeholder="If it's 6, then i will..." value="{{inputt}}"/>
+</view>
+
+<!-- </view> -->

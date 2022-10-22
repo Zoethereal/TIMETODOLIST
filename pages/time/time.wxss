@@ -1,0 +1,75 @@
+/* pages/time/time.wxss */
+page{
+	background: mintcream;
+}
+.slider{
+  width: 700rpx;
+  margin: 25% auto 0 auto;
+}
+.slider .wx-slider-handle-wrapper{
+  height:5px
+  }
+.task_text{
+  height: 370rpx;
+  margin: 40rpx auto;
+  text-align: center;
+}
+.task_text .task_title{
+  font-size: 35rpx;
+  height: 70rpx;
+  line-height: 300rpx;
+}
+.task_text .task_desc{
+  font-size: 30rpx;
+  height: 50rpx;
+  line-height: 300rpx;
+  color: #666666;
+}
+.start{
+  width: 280rpx;
+  height: 80rpx;
+  line-height: 80rpx;
+  text-align: center;
+  color: #00BFA6;
+  border: 3rpx solid #00BFA6;
+  border-radius: 20rpx;
+  margin: 0 auto 20rpx auto;
+}
+.clock{
+  overflow:hidden;
+  background: #00BFA6;
+}
+.progress{
+  width: 400rpx;
+  height: 400rpx;
+  margin: 140rpx auto;
+  position: relative;
+}
+.progress .progress_bg,.progress_active{
+  position: absolute;
+  left: 0;
+  top: 0;
+  width: 400rpx;
+  height: 400rpx;
+}
+.progress .progress_text{
+  width: 160rpx;
+  height: 60rpx;
+  line-height: 60rpx;
+  font-size: 50rpx;
+  color: #FFFFFF;
+  text-align: center;
+  position: absolute;
+  left: 120rpx;
+  top: 170rpx;
+}
+.btns .okBtn, .btns .pauseBtn, .btns .continueBtn, .btns .cancelBtn{
+  width: 280rpx;
+  height: 80rpx;
+  line-height: 80rpx;
+  text-align: center;
+  color: #FFFFFF;
+  border: 3rpx solid #FFFFFF;
+  border-radius: 20rpx;
+  margin: 0 auto 20rpx auto;
+}

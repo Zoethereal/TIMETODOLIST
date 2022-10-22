@@ -1,0 +1,29 @@
+<!--index.wxml-->
+<view hidden="{{clockShow}}">
+  <view class="slider">
+      <slider min="1" max="60" show-value activeColor="#00BFA6"
+      backgroundColor="#E6E6E6" value="{{time}}" bindchange="slideChange"></slider>
+      </view>
+      <view class="task_text">
+        <view class="task_title">CHOOSE YOUR TASK</view>
+        <view class="task_desc">Use your {{time}} minutes wisely</view>
+      </view>
+        <view class="start" bindtap="start">
+        BEGIN
+        </view>
+</view>
+
+<view class="clock" hidden="{{!clockShow}}" style="height:{{clockHeight}}rpx"><view class="progress">
+    <canvas canvas-id="progress_bg" class="progress_bg"></canvas>
+    <canvas canvas-id="progress_active" class="progress_active"></canvas>
+    <view class="progress_text">{{timeStr}}</view>
+  </view>
+  <view class="btns">
+    <view class="okBtn" bindtap="ok" wx:if="{{okShow}}">BACK</view>
+    <view class="pauseBtn" bindtap="pause" wx:if="{{pauseShow}}">PAUSE</view>
+    <view class="continueCancelBtn" wx:if="{{continueCancelShow}}">
+      <view class="continueBtn" bindtap="continue">CONTINUE</view>
+      <view class="cancelBtn" bindtap="cancel">CANCEL</view>
+    </view>
+  </view>
+</view>

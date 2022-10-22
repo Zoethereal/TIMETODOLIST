@@ -1,0 +1,30 @@
+<view class="container">
+    <view class="search">
+        <image src="../../img/add.png" bindtap="todocontent"></image>
+        <input type="text" placeholder="want to do..." value="{{input}}" focus="{true}" bindinput="inputtodocontent"
+            bindconfirm="todocontent" />
+    </view>
+
+    <block wx:if="{{todos.length}}">
+        <view class="todos">
+            <view class="item{{item.completed?' completed':''}}" wx:for="{{todos}}" wx:key="index" bindtap="toggleit"
+                data-index="{{index}}">
+                <icon type="{{item.completed?'success':'circle'}}" color="#00BFA6"></icon>
+                
+                <text>{{item.name}}</text>
+                <icon type="clear" size="20px" catchtap="removeit" data-index="{{index}}"></icon>
+            </view>
+        </view>
+
+        <view class="doneit">
+            <text bindtap="toggleitall" decode="{{true}}">You have&nbsp;</text>
+            
+            <text wx:if="{{leftcount}}">
+                <text class="num"> {{leftcount}}</text> {{leftcount>1? 'items':'item'}} left
+            </text>
+            <text wx:else="{{leftcount}}">no item left</text>
+            <text bindtap="clearit" decode="{{true}}">&nbsp;to complete</text>
+        </view>
+    </block>
+    <view wx:else class="tip">All to-dos have been completed.</view>
+</view>

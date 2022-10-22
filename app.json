@@ -1,0 +1,41 @@
+{
+  "pages":[
+    "pages/time/time",
+    "pages/todo/todo",
+    "pages/tz/tz"
+  ],
+  "window":{
+    "backgroundTextStyle":"light",
+    "navigationBarBackgroundColor": "#FFFFFF",
+    "navigationBarTitleText": "TIMETODOLIST",
+    "navigationBarTextStyle":"black"
+
+
+  },
+  "tabBar": {
+    "list": [{
+      "pagePath": "pages/time/time",
+      "text": "TIME",
+      "iconPath": "img/time.png",
+      "selectedIconPath": "img/time.png"
+    },
+    {
+      "pagePath": "pages/todo/todo",
+      "text": "LIST",
+      "iconPath": "img/todolist.png",
+      "selectedIconPath": "img/todolist.png"
+    },
+    {
+      "pagePath": "pages/tz/tz",
+      "text": "DICE",
+      "iconPath": "img/rd.png",
+      "selectedIconPath": "img/rd.png"
+    }
+  ],
+  "color": "#000000",
+  "selectedColor":"#00BFA6",
+  "backgroundColor": "#FFFFFF"
+  },
+  "style": "v2",
+  "sitemapLocation": "sitemap.json"
+}
